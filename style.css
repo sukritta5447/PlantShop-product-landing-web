@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #132a13;
+  width: 100%;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ecf39e;
+}
+
+p {
+  color: #ecf39e;
+}
+
+.container {
+  width: 1300px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.welcome {
+  background-image: url(./image/tropical-green-leaves-background.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.welcometext h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+  color: #ecf39e;
+  padding-left: 150px;
+}
+
+.welcome p {
+  padding-left: 150px;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: #90a955;
+  color: #132a13;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  margin-left: 150px;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background-color: #4f772d;
+}
+
+.header {
+  background: #132a13;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-1 {
+  flex-basis: 50%;
+  min-width: 300px;
+  padding-left: 75px;
+  text-align: justify;
+}
+
+.col-1 p {
+  color: #132a13;
+}
+.col-1 h1 {
+  color: #4f772d;
+}
+.col-2 {
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.about-us-bg {
+  background-color: #ecf39e;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.small-container .row {
+  margin-top: 70px;
+}
+
+.small-container h2 {
+  margin-top: 50px;
+  align-items: center;
+  display: flex;
+}
+
+.col-3 {
+  flex-basis: 33.33%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+
+.col-3 img {
+  width: 100%;
+}
