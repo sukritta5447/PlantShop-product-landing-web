@@ -119,6 +119,33 @@ p {
   background-color: #ecf39e;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  margin: 70px 0;
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 180px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.col-3 p {
+  color: #132a13;
+  font-size: 14px;
+}
+
 .small-container {
   max-width: 1080px;
   margin: auto;
@@ -126,23 +153,110 @@ p {
   padding-right: 25px;
 }
 
-.small-container .row {
-  margin-top: 70px;
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #4f772d;
 }
 
-.small-container h2 {
-  margin-top: 50px;
+.title::after {
+  content: "";
+  background: #132a13;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4 {
+  color: #4f772d;
+}
+
+.col-3:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.btn-2 {
+  display: inline-block;
+  background: #90a955;
+  color: #132a13;
+  padding: 8px 30px;
+  margin: 20px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
   align-items: center;
-  display: flex;
+  margin-left: 43%;
 }
 
-.col-3 {
-  flex-basis: 33.33%;
-  padding: 10px;
-  min-width: 200px;
-  margin-bottom: 50px;
+.review {
+  padding-top: 100px;
 }
 
-.col-3 img {
-  width: 100%;
+.review col-3 {
+  text-align: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.col-3 p {
+  font-size: 18px;
+}
+
+.col-3 h3 {
+  color: #132a13;
+}
+
+.review-bg {
+  background-color: #4f772d;
+}
+
+.footer-bg {
+  background-color: #132a13;
+}
+
+.footer-col-1 h3 {
+  margin: 25px 0;
+  color: #ecf39e;
+}
+
+.footer-col-1 ul {
+  list-style-type: none;
+  color: #ecf39e;
+  margin-bottom: 25px;
+}
+
+.footer-col-2 img {
+  width: 200px;
+}
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+/* menu media quary*/
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #132a13;
+    width: 100%;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+  }
 }
